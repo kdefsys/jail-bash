@@ -38,7 +38,7 @@ copy_dependencies() {
 		[ -z "$lib_path" ] && continue
 
 		# Determinamos la ruta de destino dentro de nuestra jaula
-		local dest_path="${JAIL_PATH}/${lib_path}"
+		local dest_path="${JAIL_PATH}${lib_path}"
 		local dest_dir=$(dirname "$dest_path")
 
 		# Si el directorio destino no existe en la jaula, lo creamos
